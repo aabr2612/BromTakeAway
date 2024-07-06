@@ -138,8 +138,6 @@ footer a:hover {
 }
 
 
-
-
 /* Carousel */
 .carousel-item {
     height: 500px;
@@ -184,24 +182,17 @@ footer a:hover {
     /* Yellow shadow effect */
 }
 
-/* Social Icons */
-.social-icons {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 10px;
-}
-
-.social-icons li a {
-    color: var(--icon-color);
-    /* Dark color for icons */
-    font-size: 24px;
-    text-decoration: none;
-}
-
-.social-icons li a:hover {
-    color: var(--icon-hover-color);
-    /* Yellow on hover */
-    text-shadow: var(--icon-hover-shadow);
-    /* Yellow shadow effect */
-}
+.carousel-item {
+    height: 300px; /* Adjust the height as needed */
+  }
+  
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Adjust the width of service cards */
+  .row-cols-md-4 .col {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
