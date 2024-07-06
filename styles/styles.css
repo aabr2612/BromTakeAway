@@ -1,0 +1,207 @@
+/* Define CSS variables for colors */
+:root {
+    --primary-color: #007bff;
+    /* Blue */
+    --secondary-color: #0056b3;
+    /* Darker blue */
+    --background-color: #ffffff;
+    /* White background */
+    --text-color: #333333;
+    /* Dark text color */
+    --footer-background: #ffffff;
+    /* White background for footer */
+    --navbar-background: #ffffff;
+    /* White background for navbar */
+    --link-color: #007bff;
+    /* Blue links */
+    --link-hover-color: #0056b3;
+    /* Darker blue on hover */
+    --button-background: #007bff;
+    /* Blue button background */
+    --button-text-color: #ffffff;
+    /* White text on button */
+    --reviews-heading-color: #ffffff;
+    /* White color for reviews heading */
+    --icon-color: #333333;
+    /* Dark color for icons */
+    --icon-hover-color: #ffd700;
+    /* Yellow on hover */
+    --icon-hover-shadow: 0 0 5px #ffd700;
+    /* Yellow shadow effect */
+}
+
+/* Global styles */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    /* Dark text color for readability */
+    background-color: var(--background-color);
+    /* White background color */
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--navbar-background);
+    /* White background for navbar */
+    border-bottom: 1px solid #dee2e6;
+    /* Subtle border for separation */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text-color);
+    /* Dark color for navbar links */
+}
+
+.navbar-light .navbar-brand {
+    color: var(--text-color);
+    /* Dark color for the brand */
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX///8AAABMTEzx8fEMDAwdHR1RUVE2NjZXV1e6urpzc3OCgoLg4OCmpqbj4+N+fn5qamq/v7/S0tKIiIiysrLJyclERESenp6kpKQ7OzsTExMxMTHo6Oirq6v39/cjIyNdXV2tbph8AAAB3ElEQVR4nO3c207bUBAFULdpqcmNEHIhQID//0pKaaQ+jM3LkQZP1/qCvWXlOEceTdcBAAAAAAAAAAAAAAAAAABf3Xq1ufo+XVeb1dNov6f+2/T16+GC19nhGrkeKnibnayZ27jgLDtXQ7Ow4SY7VkOb8JTJTtVUdKJWOWY+RIfNIjtUU3dBw3l2qKbmQcOb7FBN3QQNz9mhmjoHDZfZoZpaRq+LQ3aqhg5RwW6bHauhbdiwu8vO1Uz0rih1nEYH6V+77GxN7IYLdt3zeep34P78PFYQAAAAAADg69gvDr+m7LDYj/bbvmR/OmrgZeAD8LtjdrhGjkMFV9nJmlnFBdfZuRqKx4Sn/vX3X331Rxg/xBpTChfRtEKt6ctF0LD+9GX9Z1j/d1j/LK3/Piw1QhsO0HbdfXauZu7jgv/B3eL3/feUHa6B0/gdeL84PfyYrofTJ3d8AAAAAABgUmZT9nm9Xf/4c8oe+9G9H0V2tg0uhqwzcBKNmvxRfsdQ/T1R5Xd9VRo2icdN6u/cq7Lo60O07qv+9GWdd8W76H1R4//MRfS/pv4e4fq7oEs9xIHl+nV+iYO3iyoVR65Py9fscA28DgwIXzoe5/3VdPXz43g/AAAAAAAAAAAAyPUG7MtG5PiE1XYAAAAASUVORK5CYII=');
+    /* Ensure the icon is visible */
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--footer-background);
+    /* White background for footer */
+    color: var(--text-color);
+    /* Dark text color */
+}
+
+footer a {
+    color: var(--link-color);
+    /* Blue links */
+}
+
+footer a:hover {
+    color: var(--link-hover-color);
+    /* Darker blue on hover */
+}
+
+/* Reviews Section */
+.reviews-section {
+    background-color: var(--secondary-color);
+    /* Darker blue background */
+    color: var(--reviews-heading-color);
+    /* White color for reviews heading */
+    padding: 60px 20px;
+}
+
+.reviews-heading {
+    color: var(--reviews-heading-color);
+    /* White color for reviews heading */
+}
+
+.ReviewHeading {
+    color: var(--primary-color)
+}
+
+/* Button */
+.btn-primary {
+    background-color: var(--button-background);
+    /* Blue button background */
+    color: var(--button-text-color);
+    /* White text on button */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--link-hover-color);
+    /* Darker blue on hover */
+    color: var(--button-text-color);
+    /* Ensure text remains white */
+}
+
+/* Main Section */
+.main-background {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--text-color);
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section {
+    text-align: left;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background for readability */
+    border-radius: 8px;
+}
+
+
+
+
+/* Carousel */
+.carousel-item {
+    height: 500px;
+    background-color: var(--background-color);
+    /* Ensure consistent background color */
+}
+
+.carousel-item img {
+    max-height: 100%;
+    width: auto;
+    margin: 0 auto;
+}
+
+/* Rating */
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.star {
+    color: var(--icon-color);
+    /* Dark color for stars */
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.star.empty {
+    color: #ccc;
+    /* Light gray for empty stars */
+}
+
+.star:hover,
+.star:hover~.star,
+.star.selected,
+.star.selected~.star {
+    color: var(--icon-hover-color);
+    /* Yellow on hover */
+    text-shadow: var(--icon-hover-shadow);
+    /* Yellow shadow effect */
+}
+
+/* Social Icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li a {
+    color: var(--icon-color);
+    /* Dark color for icons */
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons li a:hover {
+    color: var(--icon-hover-color);
+    /* Yellow on hover */
+    text-shadow: var(--icon-hover-shadow);
+    /* Yellow shadow effect */
+}
